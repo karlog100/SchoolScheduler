@@ -3,7 +3,7 @@ using System.Windows.Controls;
 
 namespace Views
 {
-    public class BaseView : UserControl
+    public abstract class BaseView : UserControl
     {
         public object DataContext { get; set; }
 

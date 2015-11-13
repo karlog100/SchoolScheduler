@@ -36,7 +36,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Scheduler_icon.ico</ApplicationIcon>
+    <ApplicationIcon>Images\Scheduler_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>
@@ -96,11 +96,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Scheduler_icon.ico" />
+    <Resource Include="Images\Scheduler_icon.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Controlers\Controlers.csproj">
       <Project>{6e5048e5-990c-4c3d-a255-2cc344fa4afe}</Project>

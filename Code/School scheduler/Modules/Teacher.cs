@@ -1,12 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Modules
 {
-    class Teacher
+    class Teacher : User
     {
+        /// <summary>
+        /// The Teacher´s mounthley payment
+        /// </summary>
+        public int Payrole
+        {
+            get;
+            set;
+        }
     }
 }
