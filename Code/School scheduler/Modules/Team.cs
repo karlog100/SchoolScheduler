@@ -8,7 +8,7 @@ namespace Modules
         /// <summary>
         /// Students assigned to the Team
         /// </summary>
-        public List<Students> AssignedStudents
+        public List<Student> AssignedStudents
         {
             get;
             set;

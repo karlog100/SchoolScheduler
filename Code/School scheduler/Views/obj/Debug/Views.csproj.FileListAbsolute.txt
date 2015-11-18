@@ -1,0 +1,17 @@
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\bin\Debug\Views.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\bin\Debug\Views.pdb
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\Views.csprojResolveAssemblyReference.cache
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\Base Classes\ViewWindow.baml
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\RegisterView.g.cs
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\MainLoginView.g.cs
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\Base Classes\ViewWindow.g.cs
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\Views_MarkupCompile.cache
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\Views_MarkupCompile.lref
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\RegisterView.baml
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\MainLoginView.baml
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\Views.g.resources
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\Views.Properties.Resources.resources
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\Views.csproj.GenerateResource.Cache
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\Views.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\Views.pdb

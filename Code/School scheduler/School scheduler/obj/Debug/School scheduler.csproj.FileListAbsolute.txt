@@ -1,1 +1,20 @@
-C:\Users\benno\Source\Repos\School scheduler\School scheduler\School scheduler\bin\Debug\School scheduler.exe.config
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\bin\Debug\School scheduler.exe.config
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\bin\Debug\School scheduler.exe
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\bin\Debug\School scheduler.pdb
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\bin\Debug\Controlers.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\bin\Debug\Views.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\bin\Debug\ViewModels.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\bin\Debug\Modules.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\bin\Debug\MySql.Data.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\bin\Debug\Controlers.pdb
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\bin\Debug\Views.pdb
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\bin\Debug\ViewModels.pdb
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\bin\Debug\Modules.pdb
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\obj\Debug\School scheduler.csprojResolveAssemblyReference.cache
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\obj\Debug\App.g.cs
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\obj\Debug\School scheduler_MarkupCompile.cache
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\obj\Debug\School scheduler.g.resources
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\obj\Debug\School_scheduler.Properties.Resources.resources
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\obj\Debug\School scheduler.csproj.GenerateResource.Cache
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\obj\Debug\School scheduler.exe
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\School scheduler\obj\Debug\School scheduler.pdb

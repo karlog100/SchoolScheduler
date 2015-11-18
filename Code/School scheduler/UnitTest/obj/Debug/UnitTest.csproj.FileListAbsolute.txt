@@ -1,0 +1,18 @@
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\UnitTest\bin\Debug\Controlers.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\UnitTest\bin\Debug\Modules.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\UnitTest\bin\Debug\MySql.Data.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\UnitTest\bin\Debug\School scheduler.exe
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\UnitTest\bin\Debug\ViewModels.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\UnitTest\bin\Debug\Views.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\UnitTest\bin\Debug\Controlers.pdb
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\UnitTest\bin\Debug\Modules.pdb
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\UnitTest\bin\Debug\School scheduler.pdb
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\UnitTest\bin\Debug\ViewModels.pdb
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\UnitTest\bin\Debug\Views.pdb
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\UnitTest\obj\Debug\UnitTest.csproj.ResolveComReference.cache
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\UnitTest\obj\Debug\UnitTest.pdb

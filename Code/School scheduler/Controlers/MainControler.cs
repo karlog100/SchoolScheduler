@@ -1,18 +1,27 @@
 ﻿using System.Windows;
 using ViewModels;
 using Views;
+using Modules;
 
 namespace Controlers
 {
     public class MainControler : BaseControlModel
     {
-        private ViewWindow Current_View;
+        ViewWindow MainWindow;
+        BaseViewModel Current_ViewModel;
 
-        public MainControler() {
-            Current_View = new ViewWindow();
-            MainViewModel View = new MainViewModel(Current_View);
+        public MainControler() 
+        {
+            MainWindow = new ViewWindow();
+            Current_ViewModel = new LoginViewModel();
+            ((LoginViewModel)Current_ViewModel).OnUserLogin += new LoginViewModel.UserLoginHandler(User_Login);
+            Current_ViewModel.ShowInWindow(MainWindow);
+        }
 
-            Current_View.ShowDialog();
+        private void User_Login(object sender, User Currentuser) 
+        {
+            ((BaseViewModel)sender).Dispose();
+
         }
     }
 }

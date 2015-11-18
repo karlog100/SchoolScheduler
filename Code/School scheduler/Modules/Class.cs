@@ -9,7 +9,7 @@ namespace Modules
         /// Students assigned to the Class
         /// Becourse a singel student could be assigned to a class for multiple reasons.
         /// </summary>
-        public List<Students> AssignedStudents
+        public List<Student> AssignedStudents
         {
             get;
             set;

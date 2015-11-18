@@ -4,17 +4,17 @@
 library
 C#
 .cs
-C:\Users\benno\Source\Repos\School scheduler\School scheduler\Views\obj\Debug\
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\
 Views
 none
 false
 DEBUG;TRACE
 
-2-386070674
+31249681390
 
-10-240195979
+12-1941030558
 12-1401562060
-MainView.xaml;Base Classes\ViewWindow.xaml;
+RegisterView.xaml;MainLoginView.xaml;Base Classes\ViewWindow.xaml;
 
 False
 

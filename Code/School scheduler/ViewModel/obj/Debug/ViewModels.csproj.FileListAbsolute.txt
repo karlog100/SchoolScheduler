@@ -1,0 +1,10 @@
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\ViewModel\bin\Debug\ViewModels.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\ViewModel\bin\Debug\ViewModels.pdb
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\ViewModel\bin\Debug\Modules.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\ViewModel\bin\Debug\Views.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\ViewModel\bin\Debug\MySql.Data.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\ViewModel\bin\Debug\Modules.pdb
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\ViewModel\bin\Debug\Views.pdb
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\ViewModel\obj\Debug\ViewModels.csprojResolveAssemblyReference.cache
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\ViewModel\obj\Debug\ViewModels.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\ViewModel\obj\Debug\ViewModels.pdb

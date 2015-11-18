@@ -1,0 +1,6 @@
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Modules\bin\Debug\Modules.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Modules\bin\Debug\Modules.pdb
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Modules\bin\Debug\MySql.Data.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Modules\obj\Debug\Modules.csprojResolveAssemblyReference.cache
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Modules\obj\Debug\Modules.dll
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Modules\obj\Debug\Modules.pdb

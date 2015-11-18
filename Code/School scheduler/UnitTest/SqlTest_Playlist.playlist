@@ -1,0 +1,8 @@
+<Playlist Version="1.0">
+<Add Test="UnitTest.SqlTests.SqlConnection_Test" />
+<Add Test="UnitTest.UsersTest.GetUser_ByEmail" />
+<Add Test="UnitTest.UsersTest.Save_NewStudent" />
+<Add Test="UnitTest.UsersTest.Delete_User" />
+<Add Test="UnitTest.UsersTest.Save_NewTeacher" />
+<Add Test="UnitTest.UsersTest.Delete_User" />
+</Playlist>

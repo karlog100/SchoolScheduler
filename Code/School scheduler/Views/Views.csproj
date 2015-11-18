@@ -47,7 +47,11 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="MainView.xaml">
+    <Page Include="RegisterView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainLoginView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -56,8 +60,12 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Compile Include="Base Classes\BaseView.cs" />
-    <Compile Include="MainView.xaml.cs">
-      <DependentUpon>MainView.xaml</DependentUpon>
+    <Compile Include="Base Classes\RadioButtonCheckedConverter.cs" />
+    <Compile Include="RegisterView.xaml.cs">
+      <DependentUpon>RegisterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainLoginView.xaml.cs">
+      <DependentUpon>MainLoginView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Base Classes\ViewWindow.xaml.cs">
       <DependentUpon>ViewWindow.xaml</DependentUpon>
@@ -87,7 +95,9 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\Scheduler_icon.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
