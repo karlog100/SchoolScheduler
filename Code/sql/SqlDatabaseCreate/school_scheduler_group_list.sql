@@ -4,7 +4,7 @@ USE `school_scheduler`;
 --
 -- Host: localhost    Database: school_scheduler
 -- ------------------------------------------------------
--- Server version	5.6.27-log
+-- Server version	5.7.9-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -18,31 +18,33 @@ USE `school_scheduler`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `student`
+-- Table structure for table `group_list`
 --
 
-DROP TABLE IF EXISTS `student`;
+DROP TABLE IF EXISTS `group_list`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `student` (
+CREATE TABLE `group_list` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `group_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
-  `education_start_date` datetime NOT NULL,
-  `education_end_date` datetime NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `fk_student_user_idx` (`user_id`),
-  CONSTRAINT `fk_student_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`id`,`group_id`,`user_id`),
+  UNIQUE KEY `user_group` (`group_id`,`user_id`),
+  KEY `fk_group_list_group_idx` (`group_id`),
+  KEY `fk_group_list_user_idx` (`user_id`),
+  CONSTRAINT `fk_group_list_group` FOREIGN KEY (`group_id`) REFERENCES `group` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_group_list_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `student`
+-- Dumping data for table `group_list`
 --
 
-LOCK TABLES `student` WRITE;
-/*!40000 ALTER TABLE `student` DISABLE KEYS */;
-INSERT INTO `student` VALUES (1,1,'2015-01-01 00:00:00','2015-12-24 00:00:00'),(2,2,'2015-01-01 00:00:00','2015-12-24 00:00:00'),(4,5,'2015-01-01 00:00:00','2015-12-24 00:00:00');
-/*!40000 ALTER TABLE `student` ENABLE KEYS */;
+LOCK TABLES `group_list` WRITE;
+/*!40000 ALTER TABLE `group_list` DISABLE KEYS */;
+INSERT INTO `group_list` VALUES (1,1,1),(2,1,2);
+/*!40000 ALTER TABLE `group_list` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -54,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-18  2:12:22
+-- Dump completed on 2015-11-18 13:59:36

@@ -4,7 +4,7 @@ USE `school_scheduler`;
 --
 -- Host: localhost    Database: school_scheduler
 -- ------------------------------------------------------
--- Server version	5.6.27-log
+-- Server version	5.7.9-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -18,29 +18,27 @@ USE `school_scheduler`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `teatcher`
+-- Table structure for table `group`
 --
 
-DROP TABLE IF EXISTS `teatcher`;
+DROP TABLE IF EXISTS `group`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `teatcher` (
+CREATE TABLE `group` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_id` int(11) NOT NULL,
-  `payrole` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`),
-  KEY `fk_teatcher_users_idx` (`user_id`),
-  CONSTRAINT `fk_teatcher_users` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `name` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `teatcher`
+-- Dumping data for table `group`
 --
 
-LOCK TABLES `teatcher` WRITE;
-/*!40000 ALTER TABLE `teatcher` DISABLE KEYS */;
-/*!40000 ALTER TABLE `teatcher` ENABLE KEYS */;
+LOCK TABLES `group` WRITE;
+/*!40000 ALTER TABLE `group` DISABLE KEYS */;
+INSERT INTO `group` VALUES (1,'testGroup1'),(2,'testGroup2');
+/*!40000 ALTER TABLE `group` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -52,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-18  2:12:22
+-- Dump completed on 2015-11-18 13:59:35
