@@ -14,7 +14,7 @@ namespace ViewModels
         private User LoginUser;
         private bool _ErrorActive = false;
         private string _ErrorText = "";
-
+        #region propertys
         public string ErrorText
         {
             get
@@ -63,13 +63,8 @@ namespace ViewModels
                 RaisePropertyChanged();
             }
         }
-
-        public LoginViewModel()
-        {
-            LoginUser = new User();
-            this.View = new MainLoginView();
-        }
-
+        #endregion
+        #region Commands
         public ICommand LoginCommand
         {
             get
@@ -84,6 +79,13 @@ namespace ViewModels
             {
                 return new ActionCommand(p => Register());
             }
+        }
+        #endregion
+
+        public LoginViewModel()
+        {
+            LoginUser = new User();
+            this.View = new MainLoginView();
         }
 
         private void Login()
@@ -123,7 +125,7 @@ namespace ViewModels
                 }
                 catch (ArgumentNullException ex)
                 {
-                    if (ex.Message.Equals("Value cannot be null.\r\nParameter name: User does not exists"))
+                    if (ex.Message.Equals("User does not exists\r\nParameter name: Get User info fail"))
                     {
                         ViewWindow RegisterWindow;
                         BaseViewModel RegisterWindow_ViewModel;

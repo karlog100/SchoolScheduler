@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Modules
 {
-    class Class : User
+    class Class : BaseModel
     {
         /// <summary>
         /// Students assigned to the Class
@@ -27,6 +27,23 @@ namespace Modules
         /// Teacher assigned to the Class
         /// </summary>
         public List<Teacher> AssignedTeacher
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// Class Start Date
+        /// </summary>
+        public DateTime StartDate
+        {
+            get;
+            set;
+        }
+        /// <summary>
+        /// Class End Date
+        /// </summary>
+        public DateTime EndDate
         {
             get;
             set;

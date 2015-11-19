@@ -11,6 +11,7 @@ namespace School_scheduler
         private void Application_Startup(object sender, StartupEventArgs e)
         {
             new MainControler();
+            Application.Current.Shutdown();
         }
     }
 }

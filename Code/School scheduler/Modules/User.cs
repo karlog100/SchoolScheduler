@@ -122,19 +122,19 @@ namespace Modules
             }
             if (String.IsNullOrEmpty(Name))
             {
-                throw(new ArgumentNullException("Name is missing"));
+                throw(new ArgumentNullException("User save fail","Name is missing"));
             }
             else if (String.IsNullOrEmpty(Address))
             {
-                throw (new ArgumentNullException("Address is missing"));
+                throw (new ArgumentNullException("User save fail", "Address is missing"));
             }
             else if (String.IsNullOrEmpty(PostCode))
             {
-                throw (new ArgumentNullException("PostCode is missing"));
+                throw (new ArgumentNullException("User save fail", "PostCode is missing"));
             }
             else if (String.IsNullOrEmpty(Phone))
             {
-                throw (new ArgumentNullException("Phone is missing"));
+                throw (new ArgumentNullException("User save fail", "Phone is missing"));
             }
             else 
             {
@@ -227,7 +227,7 @@ namespace Modules
                 this.Phone = Reader.GetString(Reader.GetOrdinal("phone"));
             }
             else {
-                throw (new ArgumentNullException("User does not exists"));
+                throw (new ArgumentNullException("Get User info fail","User does not exists"));
             }
             Reader.Dispose();
             Conn.Close();

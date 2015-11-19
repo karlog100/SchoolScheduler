@@ -6,12 +6,12 @@ using System.Windows;
 
 namespace ViewModels
 {
-    class RegisterViewModel : BaseViewModel
+    public class EditViewModel : BaseViewModel
     {
-        public delegate void UserRegistrationHandler(object sender, User arg);
-        public event UserRegistrationHandler OnUserRegistrated;
+        public delegate void UserEditingHandler(object sender, User arg);
+        public event UserEditingHandler OnUserEdited;
 
-        private User RegistrateUser;
+        private User Editing_User;
         private bool _ErrorActive = false;
         private string _ErrorText = "";
 
@@ -47,11 +47,11 @@ namespace ViewModels
         {
             get
             {
-                return RegistrateUser.Name;
+                return Editing_User.Name;
             }
             set
             {
-                RegistrateUser.Name = value;
+                Editing_User.Name = value;
                 RaisePropertyChanged();
             }
         }
@@ -60,7 +60,7 @@ namespace ViewModels
         {
             get
             {
-                return RegistrateUser.Email;
+                return Editing_User.Email;
             }
             set
             {
@@ -71,11 +71,11 @@ namespace ViewModels
         {
             get
             {
-                return RegistrateUser.Address;
+                return Editing_User.Address;
             }
             set
             {
-                RegistrateUser.Address = value;
+                Editing_User.Address = value;
                 RaisePropertyChanged();
             }
         }
@@ -84,11 +84,11 @@ namespace ViewModels
         {
             get
             {
-                return RegistrateUser.PostCode;
+                return Editing_User.PostCode;
             }
             set
             {
-                RegistrateUser.PostCode = value;
+                Editing_User.PostCode = value;
                 RaisePropertyChanged();
             }
         }
@@ -97,11 +97,11 @@ namespace ViewModels
         {
             get
             {
-                return RegistrateUser.Phone;
+                return Editing_User.Phone;
             }
             set
             {
-                RegistrateUser.Phone = value;
+                Editing_User.Phone = value;
                 RaisePropertyChanged();
             }
         }
@@ -109,35 +109,27 @@ namespace ViewModels
         public User.User_Type UserType 
         {
             get {
-                return (User.User_Type)RegistrateUser.Type;
-            }
-            set {
-                RegistrateUser.Type = (int)value;
-                if (RegistrateUser.Type == (int)User.User_Type.Student)
-                    RegistrateUser = Student.CopyToStudents(RegistrateUser);
-                if (RegistrateUser.Type == (int)User.User_Type.Teacher)
-                    RegistrateUser = Teacher.CopyToTeacher(RegistrateUser);
-                RaisePropertyChanged();
+                return (User.User_Type)Editing_User.Type;
             }
         }
         #endregion
-        #region Student propertys
+        #region Student Propertys
         public DateTime Education_StartDate
         {
             get
             {
                 if (UserType == User.User_Type.Student)
                 {
-                    return ((Student)RegistrateUser).Education_StartDate;
+                    return ((Student)Editing_User).Education_StartDate;
                 }
                 string dateTime = DateTime.Now.ToString("yyyy-MM-dd");
                 DateTime Time = DateTime.Parse(dateTime);
                 return Time;
-
+                
             }
             set
             {
-                ((Student)RegistrateUser).Education_StartDate = value;
+                ((Student)Editing_User).Education_StartDate = value;
                 RaisePropertyChanged();
             }
         }
@@ -147,7 +139,7 @@ namespace ViewModels
             {
                 if (UserType == User.User_Type.Student)
                 {
-                    return ((Student)RegistrateUser).Education_EndDate;
+                    return ((Student)Editing_User).Education_EndDate;
                 }
                 string dateTime = DateTime.Now.ToString("yyyy-MM-dd");
                 DateTime Time = DateTime.Parse(dateTime);
@@ -155,7 +147,7 @@ namespace ViewModels
             }
             set
             {
-                ((Student)RegistrateUser).Education_EndDate = value;
+                ((Student)Editing_User).Education_EndDate = value;
                 RaisePropertyChanged();
             }
         }
@@ -167,41 +159,76 @@ namespace ViewModels
             {
                 if (UserType == User.User_Type.Teacher)
                 {
-                    return ((Teacher)RegistrateUser).Payrole;
+                    return ((Teacher)Editing_User).Payrole;
                 }
                 return 0;
             }
             set
             {
-                ((Teacher)RegistrateUser).Payrole = value;
+                ((Teacher)Editing_User).Payrole = value;
                 RaisePropertyChanged();
             }
         }
         #endregion
         #region Commands
-        public ICommand RegisterCommand
+        public ICommand SaveCommand
         {
             get
             {
-                return new ActionCommand(p => Register());
+                return new ActionCommand(p => Edit_Command());
+            }
+        }
+
+        public ICommand DeleteCommand
+        {
+            get
+            {
+                return new ActionCommand(p => Delete_Command());
             }
         }
         #endregion
-        public RegisterViewModel(User Register_User)
+        public EditViewModel(User Editing_User)
         {
-            RegistrateUser = Register_User;
-            UserType = User.User_Type.Student;
-            this.View = new RegisterView();
+            if (Editing_User.Type == (int)User.User_Type.Student)
+            {
+                Student Current = Student.CopyToStudents(Editing_User);
+                Current.GetUser_ByEmail();
+                this.Editing_User = Current;
+            }
+            else if (Editing_User.Type == (int)User.User_Type.Teacher)
+            {
+                Teacher Current = Teacher.CopyToTeacher(Editing_User);
+                Current.GetUser_ByEmail();
+                this.Editing_User = Current;
+            }
+            this.View = new EditView();
         }
 
-        private void Register()
-        {   
+        private void Edit_Command()
+        {
             try
             {
-                RegistrateUser.Save_User();
-                if (OnUserRegistrated != null)
+                Editing_User.Save_User();
+                if (OnUserEdited != null)
                 {
-                    OnUserRegistrated(this, RegistrateUser);
+                    OnUserEdited(this, Editing_User);
+                }
+            }
+            catch (Exception ex)
+            {
+                ErrorText = ex.Message;
+                ErrorActive = true;
+            }
+        }
+
+        private void Delete_Command()
+        {
+            try
+            {
+                Editing_User.Delete_User();
+                if (OnUserEdited != null)
+                {
+                    OnUserEdited(this, null);
                 }
             }
             catch (Exception ex)

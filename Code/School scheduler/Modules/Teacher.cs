@@ -105,7 +105,7 @@ namespace Modules
                 this.Address = Reader.GetString(Reader.GetOrdinal("address"));
                 this.PostCode = Reader.GetString(Reader.GetOrdinal("postcode"));
                 this.Phone = Reader.GetString(Reader.GetOrdinal("phone"));
-                this.Type = (int)User_Type.Student;
+                this.Type = (int)User_Type.Teacher;
                 this.Payrole = Reader.GetInt32(Reader.GetOrdinal("payrole"));
             }
             else

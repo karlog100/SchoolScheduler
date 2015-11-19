@@ -6,7 +6,7 @@ namespace Modules
 {
     public class Student : User
     {
-        public Student() 
+        public Student()
         {
             string dateTime = DateTime.Now.ToString("yyyy-MM-dd");
             DateTime Time = DateTime.Parse(dateTime);

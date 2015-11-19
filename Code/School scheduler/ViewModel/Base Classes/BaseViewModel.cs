@@ -6,6 +6,9 @@ namespace ViewModels
 {
     public abstract class BaseViewModel : ObservableObject, IDisposable
     {
+        public delegate void WindowsClosedHandler(object sender);
+        public event WindowsClosedHandler OnUserClosedWindow;
+
         private BaseView view;
         protected internal BaseView View 
         {
@@ -36,7 +39,14 @@ namespace ViewModels
         {
             if (view != null)
             {
+                View.OnUserClosedWindow += new BaseView.WindowsClosedHandler(View_OnUserClosedWindow);
                 View.ShowInWindow(MainWindow, "School Scheduler", 0, 0, Dock.Top);
+            }
+        }
+
+        private void View_OnUserClosedWindow(object sender) {
+            if (OnUserClosedWindow != null) {
+                OnUserClosedWindow(this);
             }
         }
 

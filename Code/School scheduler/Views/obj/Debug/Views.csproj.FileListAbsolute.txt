@@ -15,3 +15,5 @@ C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\Schoo
 C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\Views.csproj.GenerateResource.Cache
 C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\Views.dll
 C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\Views.pdb
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\EditView.g.cs
+C:\Users\Stationær\Documents\Visual Studio 2015\Projects\School scheduler\School scheduler\Views\obj\Debug\EditView.baml

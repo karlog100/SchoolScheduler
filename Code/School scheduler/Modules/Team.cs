@@ -28,21 +28,5 @@ namespace Modules
             get;
             set;
         }
-        /// <summary>
-        /// Team Start Date
-        /// </summary>
-        public DateTime StartDate
-        {
-            get;
-            set;
-        }
-        /// <summary>
-        /// Team End Date
-        /// </summary>
-        public DateTime EndDate
-        {
-            get;
-            set;
-        }
     }
 }
